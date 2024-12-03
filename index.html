@@ -15,20 +15,31 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            class="search-form-input"
+            placeholder="Enter a city..."
+            required
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Danville, CA</h1>
-          <p>
-            Monday 15:32, rain <br />
-            Humidity: 98%, Wind 15 mph
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Danville, CA</h1>
+            <p class="weather-app-details">
+              Monday <strong>15:32</strong>, rain <br />
+              Humidity: <strong>98%</strong>, Wind <strong>15 mph</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-containater">
+            <div class="weather-app-icon">🌧️</div>
+            <div class="weather-app-temperature">56</div>
+            <div class="weather-app-unit">°F</div>
+          </div>
         </div>
-        <div>🌧️ 56°F</div>
       </main>
       <footer>
         This project was coded by
