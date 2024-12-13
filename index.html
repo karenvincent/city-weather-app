@@ -15,12 +15,13 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             class="search-form-input"
             placeholder="Enter a city..."
             required
+            id="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
         </form>
@@ -28,7 +29,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Danville, CA</h1>
+            <h1 class="weather-app-city" id="city">Danville, CA</h1>
             <p class="weather-app-details">
               Monday <strong>15:32</strong>, rain <br />
               Humidity: <strong>98%</strong>, Wind <strong>15 mph</strong>
@@ -58,5 +59,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
